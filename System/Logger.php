@@ -35,7 +35,9 @@ class Logger
         ini_set("display_errors", 1);
       }
     } else {
-      echo "Ошибка ";
+      if (DEBUG === false) {
+        Loader::goView(PAGE_ERROR);
+      }   
     }
   }
 
