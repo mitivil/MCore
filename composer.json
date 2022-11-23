@@ -1,0 +1,15 @@
+{
+    "name": "alex/verhinino",
+    "description": "Composer to study",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "MCore\\": ""
+        }
+    },
+    "authors": [{
+        "name": "mitivil",
+        "email": "mitivili333@gmail.com"
+    }],
+    "require": {}
+}
