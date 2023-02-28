@@ -62,7 +62,6 @@ class Loader
         $split_path = explode('->', $model_path_class);
         $classAndFile = $split_path[count($split_path) - 1];
         $full_path = MODEL_PATH . '/' . str_replace('->', '/', $model_path_class) . '.php';
-
         include_once($full_path);
         $found_class = new $classAndFile();
         return $found_class;

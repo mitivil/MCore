@@ -23,11 +23,14 @@ class MySql
         $result = [];
         try {
             Self::connect();
-            $result = Self::$session_sql->query($query)->fetch_all(MYSQLI_ASSOC);
+            $sql = Self::$session_sql->query($query);
+            if (isset($sql->num_rows)) {
+                $result = $sql->fetch_all(MYSQLI_ASSOC);
+            }
         } catch (\Throwable $th) {
-            Logger::writeLog(Self::$session_sql -> error); 
+            Logger::writeLog(Self::$session_sql->error);
         }
-        return $result ;
+        return $result;
     }
 
     public static function escape(string $string): string
@@ -36,6 +39,9 @@ class MySql
         return Self::$session_sql->real_escape_string($string);
     }
 
-
-  
+    public static function lastID(): string
+    {
+        $lastID = Self::$session_sql->insert_id;
+        return $lastID;
+    }
 }

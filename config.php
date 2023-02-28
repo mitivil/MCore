@@ -9,7 +9,7 @@ define("VIEW_PATH", __DIR__ . '/View');
 /**===== Настройки MySql ======================== */
 define('MYSQL_HOSTNAME', 'localhost');
 define('MYSQL_USERNAME', 'root');
-define('MYSQL_PASSWORD', 'MitiviliRaptariT12');
+define('MYSQL_PASSWORD', 'password');
 define('MYSQL_DATABASE', 'mcore');
 
 /**===== Дополнительные библиотеки =================== */

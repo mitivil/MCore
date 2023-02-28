@@ -10,7 +10,6 @@ class Router
     private static $url_redirect = '';
     private static $name_function = 'index';
 
-
     public static function routerRun(): Void
     {
         switch (TRUE) {
@@ -20,8 +19,25 @@ class Router
                 break;
                 // USER-URL.
             default:
+                Self::set_GET(); // $_GET
                 Self::view();
                 break;
+        }
+    }
+
+    // Устанавливаем параметры $_GET.
+    private static function set_GET(): Void
+    {
+        $split_uri = explode('?', $_SERVER['REQUEST_URI']);
+        if (count($split_uri) > 1) {
+            $split_uri2 = explode('&', $split_uri[1]);
+            if (count($split_uri2) > 0) {
+                for ($i = 0; $i < count($split_uri2); $i++) {
+                    $name_param = explode('=', $split_uri2[$i])[0];
+                    $value_param = explode('=', $split_uri2[$i])[1];
+                    $_GET[$name_param] = $value_param;
+                }
+            }
         }
     }
 
@@ -35,6 +51,7 @@ class Router
         for ($i = 0; $i < count($apiPath) - 1; $i++) {
             $path_controller .= '/' . $apiPath[$i];
         }
+
         // Направить.
         Self::direct($path_controller, $name_controller, $function_controller);
     }
