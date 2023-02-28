@@ -111,7 +111,7 @@ Micro-framework на кодовом языке PHP , по классическо
     + ```Tools::infoUserTelephone();``` -  Получаем информацию пользователя по телефону. 
     + ```Tools::infoUserMD5();```       -  Получаем информацию пользователя по MD5. 
  - MySql.php
-    + ```Tools::mySql();```             -  Запросить в Базу данных(Или получить ответ).
+    + ```Tools::mySql();```             -  Запросить в Базу данных(SELECT, UPDATE, INSERT).
     + ```Tools::escape();```            -  Экранировка. 
  - Pagination.php
    + ```Tools::pagination($total_page, $current_page);``` - Пагинация.
