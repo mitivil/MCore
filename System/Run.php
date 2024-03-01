@@ -6,7 +6,7 @@ use MCore\System\Router;
 
 class Run
 {
-    public static function config()
+    public static function config()  
     {
         require_once('config.php');
         require_once('System/configSys.php');
