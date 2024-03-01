@@ -8,10 +8,10 @@ use MCore\System\Loader; // Загрузчик (Model, View).
  */
 class ControllerHome
 {
-    // Базовый метод.
+    // Базовый метод. 
     public function index()
     {
-        // Загружаем модель.
+        // Загружаем модель.    
         $modelHome = Loader::model('ModelHome');
 
 
