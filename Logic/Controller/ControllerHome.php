@@ -4,7 +4,7 @@ use MCore\System\Logger;
 use MCore\System\Loader; // Загрузчик (Model, View).
 
 /**
- * LogicHome - Микро-Логика домашней страницы.
+ * LogicHome - Микро-Логика домашней страницы.  
  */
 class ControllerHome
 {
