@@ -8,7 +8,7 @@ use MCore\System\Loader; // Загрузчик (Model, View).
  */
 class ControllerHome
 {
-    // Базовая.
+    // Базовый метод.
     public function index()
     {
         // Загружаем модель.
