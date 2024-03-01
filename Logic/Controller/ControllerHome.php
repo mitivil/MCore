@@ -20,7 +20,7 @@ class ControllerHome
             'header_file'   => VIEW_PATH . '/Common/header.php',
             'content_file'  => VIEW_PATH . '/Page/home.php',
             'footer_file'   => VIEW_PATH . '/Common/footer.php',    
-        ];
+        ];  
 
         // Выводим данные на макет. 
         Loader::goView('index.php', $data);
