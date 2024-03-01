@@ -3,7 +3,7 @@
 namespace Mcore\System;
 
 use MCore\System\Router;
-
+   
 class Run
 {
     public static function config()  

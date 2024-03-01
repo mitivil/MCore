@@ -24,7 +24,7 @@ class ControllerHome
 
         // Выводим данные на макет. 
         Loader::goView('index.php', $data);
-    }   
+    }      
 
     public function apiRequestTest()
     {
