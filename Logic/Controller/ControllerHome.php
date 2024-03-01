@@ -1,6 +1,6 @@
 <?php
 
-use MCore\System\Logger;  
+use MCore\System\Logger;    
 use MCore\System\Loader; // Загрузчик (Model, View).
 
 /**

@@ -12,7 +12,7 @@ class Run
         require_once('System/configSys.php');
     }
 
-    public static function logger()
+    public static function logger()  
     {
         require_once('System/LogHandler.php');
     }
