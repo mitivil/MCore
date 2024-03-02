@@ -14,7 +14,7 @@ class Run
 
     public static function logger()  
     {
-        require_once('System/LogHandler.php');
+        require_once('System/LogHandler.php');   
     }
 
     public static function router()
