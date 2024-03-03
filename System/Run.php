@@ -17,8 +17,8 @@ class Run
         require_once('System/LogHandler.php');   
     }
 
-    public static function router()
+    public static function router() 
     {      
-        Router::routerRun();
+        Router::routerRun(); 
     }
 }
